@@ -1,0 +1,92 @@
+@import '../../common.scss';
+
+$color: #fff;
+
+.banner {
+  display: inline-block;
+  padding: 0 20rem;
+  @include font($fontColor:$color, $fontfamily:'Raleway');
+  @include darkpink-background();
+  @include shadow();
+}
+
+.banner-alignment {
+  height: 400px;
+  position: relative;
+
+  @include flex($flexColumn: true);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  @include text-center($items: true, $text: true);
+}
+
+.banner-heading {
+  @include font($fontWeight: 700);
+}
+
+.banner-content {
+  @include font($fontColor:$color, $fontSize: 0.7em, $breakword: break-word);
+}
+
+.banner-github {
+  border: 0.5px solid $color;
+  border-radius: 0.4rem;
+
+  padding: 0.4rem;
+
+  @include font($fontColor:$color, $decoration: none);
+  @include shadow();
+}
+
+.banner-github:hover,
+.banner-github:active {
+  background: #1c2629;
+  @include font($fontColor:$color);
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .banner {
+    padding: 0;
+  }
+
+  .banner-heading {
+    @include font($fontSize: 1.6rem, $breakword: break-word);
+  }
+
+  .banner-content {
+    margin: 1rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .banner {
+    padding: 0;
+  }
+
+  .banner-heading {
+    @include text-center($items: true);
+    @include font($fontSize: 2rem, $breakword: break-word);
+  }
+
+  h1 {
+    @include font($fontSize: 2.8em);
+    line-height: 1em;
+  }
+
+  .banner-alignment {
+    height: 400px;
+    @include flex($flexColumn: true);
+    @include text-center($justify: true, $items: true);
+  }
+
+  .banner-content {
+    margin: 2em;
+    text-align: justify;
+  }
+}

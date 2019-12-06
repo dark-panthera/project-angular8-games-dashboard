@@ -1,0 +1,129 @@
+$accent: #ff066e;
+$dark: #c50d5d;
+$gray: #b2b2b8;
+
+@mixin text-center($justify: false, $content: false, $items: false, $text: false) {
+  @if $justify {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  @if $content {
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+
+  @if $items {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  @if $text {
+    text-align: center;
+  }
+}
+
+@mixin flex($flexRow: false, $flexColumn: false) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  @if $flexRow {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  @if $flexColumn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@mixin light-background() {
+  background: #c3cfe2;
+  background: -webkit- -o-linear-gradient(315deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: -webkit- linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: -o-linear-gradient(315deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+@mixin darkblue-background() {
+  background: #0F2027;
+  background: -webkit-gradient(linear, left top, right top, from(#2C5364), color-stop(#203A43), to(#0F2027));
+  background: -o-linear-gradient(left, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+@mixin darkpink-background() {
+  background: #ff066e;
+  background: -webkit-gradient(linear, left top, right top, from(#ff066e), color-stop(#b10f57), to(#3f1b35));
+  background: -o-linear-gradient(left, #ff066e, #b10f57, #3f1b35);
+  background: linear-gradient(to right, #ff066e, #b10f57, #3f1b35);
+}
+
+@mixin dark-background() {
+  background: #41295a;
+  background: -webkit-gradient(linear, left top, right top, from(#2F0743), to(#41295a));
+  background: -o-linear-gradient(left, #2F0743, #41295a);
+  background: linear-gradient(to right, #2F0743, #41295a);
+}
+
+@mixin shadow() {
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+@mixin font($fontColor:'', $fontSize:'', $fontfamily:'', $fontWeight:'', $decoration:'', $breakword:'') {
+  @if $fontColor !='' {
+    color: $fontColor;
+  }
+
+  @if $fontSize !='' {
+    font-size: $fontSize;
+  }
+
+  @if $fontfamily !='' {
+    font-family: $fontfamily, sans-serif;
+  }
+
+  @if $fontWeight !='' {
+    font-weight: $fontWeight;
+  }
+
+  @if $breakword !='' {
+    word-break: $breakword;
+  }
+
+  @if $decoration !='' {
+    -webkit-text-decoration: $decoration;
+    text-decoration: $decoration;
+  }
+}
+
+@mixin game-list($repeat, $size, $margin: 1rem) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat($repeat, $size);
+  grid-template-columns: repeat($repeat, $size);
+  grid-gap: 12px;
+  margin: 1rem $margin;
+}
+
+.mat-fab.mat-accent, .mat-flat-button.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent {
+  background-color: $dark;
+}
+
+.mat-paginator-container {
+  background: $gray;
+  color: $dark;
+}
+
+.mat-select-value {
+  color: $dark;
+}

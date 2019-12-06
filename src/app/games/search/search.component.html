@@ -1,0 +1,16 @@
+<div class="filter-card">
+  <form [formGroup]="form" (submit)="onFilter()" class="container">
+    <div class="row">
+      <div class="form-group">
+        <input placeholder="title" formControlName="title" type="text" name="title" class="title" />
+      </div>
+      <div>
+        <button mat-raised-button color="accent" type="submit">Search</button>
+        <button mat-raised-button color="accent" type="button" (click)="onReset()">Reset</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="error" *ngIf="form.get('title').invalid && form.get('title').touched">Please enter a game title.</div>
+    </div>
+  </form>
+</div>

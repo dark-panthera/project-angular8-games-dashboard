@@ -1,0 +1,13 @@
+.mat-fab.mat-accent, .mat-flat-button.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent {
+  background-color: #c50d5d;
+}
+
+.mat-paginator-container {
+  background: #b2b2b8;
+  color: #c50d5d;
+}
+
+.mat-select-value {
+  color: #c50d5d;
+}
+/*# sourceMappingURL=common.css.map */

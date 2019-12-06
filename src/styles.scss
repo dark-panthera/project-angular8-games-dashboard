@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import './common.scss';
+
+$background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+$height: 100%;
+
+html,
+body {
+  @include light-background();
+}
+
+html {
+  height: $height;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  min-height: $height;
+}
+
+app-games {
+  position: relative;
+  top: 64px;
+  z-index: 1;
+  @include flex($flexColumn: true);
+  @include text-center($justify: true);
+}

@@ -1,0 +1,28 @@
+@import '../../../common.scss';
+
+$color: #ecefef;
+$background: #081a1c;
+
+.game-view {
+  position: relative;
+  top: 64px;
+  width: 100%;
+  height: calc(100vh - 64px);
+  @include flex($flexRow: true);
+  @include text-center($justify: true);
+  margin: 0rem auto;
+}
+
+.game-card {
+  margin: 1rem 1rem;
+  color: $color;
+  @include text-center($text: true);
+}
+
+.game-title {
+  height: 4rem;
+  background: $background;
+
+  @include flex();
+  @include text-center($justify: true, $items: true);
+}

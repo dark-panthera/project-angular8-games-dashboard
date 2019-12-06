@@ -1,0 +1,23 @@
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+
+<div class="game-list">
+  <div class="game-component" *ngFor="let game of games">
+    <div class="game-card">
+
+      <div class="game-image">
+        <img [src]="game.image" appImage />
+      </div>
+      <div class="game-card-title">
+        <div>{{game.name}}</div>
+      </div>
+      <div class="game-actions">
+        <a class="view" mat-raised-button color="accent" [routerLink]="['/view', game.id]">View</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<mat-paginator [length]="totalGames" [pageSize]="gamesPerPage" [pageSizeOptions]="pageSizeOptions"
+  (page)="onChangedPage($event)" *ngIf="games.length > 0">
+</mat-paginator>
+<p class="mat-body-1 info-text" *ngIf="games.length === 0 && !isLoading">No Games added yet!</p>

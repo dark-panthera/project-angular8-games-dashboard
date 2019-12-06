@@ -1,0 +1,40 @@
+@import '../../common.scss';
+
+// $accent: #ff4081;
+$color: #fff;
+$toolbar: 64px;
+$decoration: none;
+
+ul {
+  list-style: $decoration;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  -webkit-text-decoration: $decoration;
+          text-decoration: $decoration;
+  color: $color;
+}
+
+ul {
+  @include flex();
+}
+
+.spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.mat-toolbar.mat-accent {
+  background: $accent;
+  color: $color;
+  position: fixed;
+  z-index: 2;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: $toolbar;
+}

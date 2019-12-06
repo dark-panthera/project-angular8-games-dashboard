@@ -1,0 +1,189 @@
+.mat-fab.mat-accent, .mat-flat-button.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent {
+  background-color: #c50d5d;
+}
+
+.mat-paginator-container {
+  background: #b2b2b8;
+  color: #c50d5d;
+}
+
+.mat-select-value {
+  color: #c50d5d;
+}
+
+.game-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 400px);
+  grid-gap: 12px;
+  margin: 1rem 1rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.game-component {
+  max-width: 89rem;
+  background: #ff066e;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+.game-heading {
+  background: #41295a;
+  background: -webkit-gradient(linear, left top, right top, from(#2F0743), to(#41295a));
+  background: linear-gradient(to right, #2F0743, #41295a);
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.game-card {
+  background: #2a2a48;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+.game-card-title {
+  color: #264754;
+  background: #fff;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.game-actions {
+  height: 4rem;
+  background: #2a2a48;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+.view:hover,
+.view:active {
+  cursor: pointer;
+}
+
+p.mat-body-1.info-text.ng-star-inserted {
+  font-size: 1.2rem;
+  color: #24434e;
+  text-align: center;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .game-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 12px;
+    margin: 1rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .game-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 12px;
+    margin: 1rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .game-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(2, 370px);
+    grid-template-columns: repeat(2, 370px);
+    grid-gap: 12px;
+    margin: 1rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .game-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(2, 450px);
+    grid-template-columns: repeat(2, 450px);
+    grid-gap: 12px;
+    margin: 1rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .game-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 400px);
+    grid-gap: 12px;
+    margin: 1rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .game-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(4, 400px);
+    grid-template-columns: repeat(4, 400px);
+    grid-gap: 12px;
+    margin: 1rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 2050px) {
+  .game-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(5, 400px);
+    grid-template-columns: repeat(5, 400px);
+    grid-gap: 12px;
+    margin: 1rem 2rem;
+  }
+}
+/*# sourceMappingURL=game-list.component.css.map */

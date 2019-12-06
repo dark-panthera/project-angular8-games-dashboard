@@ -1,0 +1,116 @@
+@import '../../../common.scss';
+
+$background-card: #2a2a48;
+// $accent: #ff4081;
+$color: #fff;
+$height: 4rem;
+
+.game-list {
+  @include game-list(3, 400px);
+  @include text-center($justify: true, $items: true);
+}
+
+.game-component {
+  max-width: 89rem;
+  background: $accent;
+  @include shadow();
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+.game-heading {
+  @include dark-background();
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.game-card {
+  background: $background-card;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+.game-card-title {
+  // color: $color;
+  color: #264754;
+  background: $color;
+
+  height: $height;
+
+  @include flex($flexRow: true);
+  @include text-center($justify: true, $items: true);
+}
+
+.game-actions {
+  height: $height;
+  background: $background-card;
+  @include shadow();
+
+  @include flex($flexColumn: true);
+  @include text-center($justify: true, $items: true);
+
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+.view:hover,
+.view:active {
+  cursor: pointer;
+}
+
+p.mat-body-1.info-text.ng-star-inserted {
+  font-size: 1.2rem;
+  color: #24434e;
+  @include text-center($text: true);
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .game-list {
+    @include game-list(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .game-list {
+    @include game-list(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .game-list {
+    @include game-list(2, 370px);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .game-list {
+    @include game-list(2, 450px);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .game-list {
+    @include game-list(3, 400px, 2rem);
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .game-list {
+    @include game-list(4, 400px, 2rem);
+  }
+}
+
+@media only screen and (min-width: 2050px) {
+  .game-list {
+    @include game-list(5, 400px, 2rem);
+  }
+}

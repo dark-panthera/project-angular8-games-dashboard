@@ -1,0 +1,113 @@
+.banner {
+  display: inline-block;
+  padding: 0 20rem;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  background: #ff066e;
+  background: -webkit-gradient(linear, left top, right top, from(#ff066e), color-stop(#b10f57), to(#3f1b35));
+  background: linear-gradient(to right, #ff066e, #b10f57, #3f1b35);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.banner-alignment {
+  height: 400px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-heading {
+  font-weight: 700;
+}
+
+.banner-content {
+  color: #fff;
+  font-size: 0.7em;
+  word-break: break-word;
+}
+
+.banner-github {
+  border: 0.5px solid #fff;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.banner-github:hover,
+.banner-github:active {
+  background: #1c2629;
+  color: #fff;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .banner {
+    padding: 0;
+  }
+  .banner-heading {
+    font-size: 1.6rem;
+    word-break: break-word;
+  }
+  .banner-content {
+    margin: 1rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .banner {
+    padding: 0;
+  }
+  .banner-heading {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 2rem;
+    word-break: break-word;
+  }
+  h1 {
+    font-size: 2.8em;
+    line-height: 1em;
+  }
+  .banner-alignment {
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .banner-content {
+    margin: 2em;
+    text-align: justify;
+  }
+}
+/*# sourceMappingURL=games.component.css.map */

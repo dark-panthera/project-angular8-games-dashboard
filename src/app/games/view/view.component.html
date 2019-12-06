@@ -1,0 +1,11 @@
+<div class="game-view" *ngIf="game">
+  <div class="game-card">
+      <div class="game-title">
+          {{game.name}}
+      </div>
+      <div>
+          <img [src]="game.image" appImage />
+      </div>
+
+  </div>
+</div>

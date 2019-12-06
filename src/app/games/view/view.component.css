@@ -33,6 +33,7 @@
   margin: 1rem 1rem;
   color: #ecefef;
   text-align: center;
+  min-width: 90%;
 }
 
 .game-title {
@@ -47,5 +48,19 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media screen and (min-width: 39.9375em) {
+  .game-card {
+    min-width: 80%;
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .game-card {
+    min-width: 50%;
+    max-width: 60%;
+  }
 }
 /*# sourceMappingURL=view.component.css.map */

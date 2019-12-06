@@ -17,6 +17,7 @@ $background: #081a1c;
   margin: 1rem 1rem;
   color: $color;
   @include text-center($text: true);
+  min-width: 90%;
 }
 
 .game-title {
@@ -25,4 +26,18 @@ $background: #081a1c;
 
   @include flex();
   @include text-center($justify: true, $items: true);
+}
+
+@media screen and (min-width: 39.9375em) {
+  .game-card {
+    min-width: 80%;
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .game-card {
+    min-width: 50%;
+    max-width: 60%;
+  }
 }
